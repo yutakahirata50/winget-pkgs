@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+PackageIdentifier: YutakaHirata.YuHex.Free
+PackageVersion: '2.09'
+InstallerType: zip
+NestedInstallerType: portable
+Installers:
+- Architecture: x64
+  InstallerUrl: 'https://github.com/yutakahirata50/YuHex-releases/releases/download/v2.09/YuHex-2.09-win-x64.zip'
+  InstallerSha256: 0CFDA29E8640DD2A56391A17086264C54D4D1DA35C22B6FC0311B9269D95E799
+  NestedInstallerFiles:
+  - RelativeFilePath: YuHex/YuHex.exe
+    PortableCommandAlias: yuhex
+ManifestType: installer
+ManifestVersion: 1.12.0
